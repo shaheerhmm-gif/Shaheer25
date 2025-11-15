@@ -1,8 +1,10 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, TrendingUp, Users, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import content from '../data/content.json';
 
 export default function Hero() {
+  const icons = [TrendingUp, Users, Award];
+
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-24 bg-white">
       <div className="max-w-7xl mx-auto w-full">
@@ -52,12 +54,33 @@ export default function Hero() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {content.stats.map((stat, i) => (
-            <div key={i} className="bg-slate-50 p-8 rounded-2xl border border-slate-100">
-              <div className="text-5xl font-bold text-slate-900 mb-2">{stat.value}</div>
-              <div className="text-base text-slate-600 font-medium">{stat.label}</div>
-            </div>
-          ))}
+          {content.stats.map((stat, i) => {
+            const Icon = icons[i];
+            const colors = [
+              { bg: 'bg-emerald-50', text: 'text-emerald-600', icon: 'text-emerald-500', border: 'border-emerald-100' },
+              { bg: 'bg-blue-50', text: 'text-blue-600', icon: 'text-blue-500', border: 'border-blue-100' },
+              { bg: 'bg-violet-50', text: 'text-violet-600', icon: 'text-violet-500', border: 'border-violet-100' }
+            ];
+
+            return (
+              <div key={i} className={`${colors[i].bg} p-8 rounded-2xl border-2 ${colors[i].border} relative overflow-hidden`}>
+                <div className="relative z-10">
+                  <div className={`w-12 h-12 ${colors[i].bg} rounded-xl flex items-center justify-center mb-4 border ${colors[i].border}`}>
+                    <Icon className={`w-6 h-6 ${colors[i].icon}`} strokeWidth={2.5} />
+                  </div>
+                  <div className={`text-6xl font-bold ${colors[i].text} mb-3 tracking-tight`}>
+                    {stat.value}
+                  </div>
+                  <div className="text-base text-slate-700 font-semibold leading-snug">
+                    {stat.label}
+                  </div>
+                </div>
+                <div className={`absolute -right-8 -bottom-8 w-32 h-32 ${colors[i].icon} opacity-5`}>
+                  <Icon className="w-full h-full" strokeWidth={1} />
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
