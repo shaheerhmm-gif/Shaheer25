@@ -1,6 +1,9 @@
 import { ArrowRight, TrendingUp, Users, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 import content from '../data/content.json';
+
+const Interactive3DFood = lazy(() => import('./Interactive3DFood'));
 
 export default function Hero() {
   const icons = [TrendingUp, Users, Award];
@@ -81,6 +84,16 @@ export default function Hero() {
               </div>
             );
           })}
+        </div>
+
+        <div className="mt-32">
+          <Suspense fallback={
+            <div className="w-full h-96 flex items-center justify-center bg-slate-50 rounded-3xl">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-slate-900"></div>
+            </div>
+          }>
+            <Interactive3DFood />
+          </Suspense>
         </div>
       </div>
     </section>
