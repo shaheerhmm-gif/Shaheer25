@@ -1,0 +1,80 @@
+{
+  "brand": {
+    "name": "DineUp",
+    "tagline": "We make restaurants profitable, predictable, and unforgettable",
+    "description": "Restaurant consultancy — operations, menu engineering, revenue optimization, and front-of-house training"
+  },
+  "contact": {
+    "phone": "9096500303",
+    "email": "INAMKEPRATEEK@gmail.com",
+    "upi": "PRATIKINAMKE3635@okaxis"
+  },
+  "nav": [
+    {"label": "Services", "href": "/services"},
+    {"label": "Work", "href": "/work"},
+    {"label": "Process", "href": "/process"},
+    {"label": "Contact", "href": "/contact"}
+  ],
+  "stats": [
+    {"value": "500+", "label": "Restaurants Transformed"},
+    {"value": "65%", "label": "Avg Revenue Growth"},
+    {"value": "100%", "label": "Client Satisfaction"}
+  ],
+  "services": [
+    {
+      "id": "consultancy",
+      "title": "Restaurant Consultancy",
+      "headline": "Operations that scale",
+      "desc": "Menu engineering, cost optimization, recipe refinement, pricing strategy",
+      "features": ["Menu Engineering", "Food Cost Optimization", "Recipe Refinement", "Pricing Strategy", "Kitchen Workflow"]
+    },
+    {
+      "id": "digital",
+      "title": "Digital Transformation",
+      "headline": "Online presence that converts",
+      "desc": "Website development, SEO optimization, Google ranking, social media branding",
+      "features": ["Website Development", "SEO Optimization", "Google Business", "Social Media", "Marketing Automation"]
+    },
+    {
+      "id": "ar",
+      "title": "AR Menu System",
+      "headline": "3D food visualization",
+      "desc": "Augmented reality menus with Google AR Viewer, no app required",
+      "features": ["3D Model Upload", "Google AR Integration", "No App Required", "Premium Experience", "Low-Cost Pricing"]
+    },
+    {
+      "id": "influencer",
+      "title": "Micro-Influencer Marketing",
+      "headline": "Real footfall, zero cost",
+      "desc": "Verified local micro-influencers, completely free with every package",
+      "features": ["Zero Cost", "Verified Influencers", "Local Targeting", "Real Footfall", "No Commission"]
+    }
+  ],
+  "process": [
+    {"step": "01", "title": "Audit", "desc": "Deep dive into your operations"},
+    {"step": "02", "title": "Strategy", "desc": "Custom growth roadmap"},
+    {"step": "03", "title": "Execute", "desc": "Implementation & training"},
+    {"step": "04", "title": "Optimize", "desc": "Ongoing support & refinement"}
+  ],
+  "pricing": [
+    {
+      "name": "Starter",
+      "price": "29,999",
+      "desc": "Perfect for new restaurants",
+      "features": ["Menu Engineering", "Basic Website", "Google Business Setup", "5 Micro-Influencers", "3 Months Management"]
+    },
+    {
+      "name": "Growth",
+      "price": "59,999",
+      "desc": "Scale your operations",
+      "highlight": true,
+      "features": ["Everything in Starter", "AR Menu (15 dishes)", "Premium Website", "15 Micro-Influencers", "6 Months Management", "Ad Campaigns"]
+    },
+    {
+      "name": "Premium",
+      "price": "99,999",
+      "desc": "Complete transformation",
+      "features": ["Everything in Growth", "Unlimited AR Menu", "30+ Micro-Influencers", "12 Months Management", "Dedicated Manager", "24/7 Support"]
+    }
+  ]
+}
