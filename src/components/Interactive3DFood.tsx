@@ -1,13 +1,12 @@
-import { Suspense, useRef, useState } from 'react';
+import { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Environment, ContactShadows, PerspectiveCamera } from '@react-three/drei';
 import { Torus, Sphere, Cylinder } from '@react-three/drei';
 import * as THREE from 'three';
-import { Eye } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 function FoodPlate() {
   const groupRef = useRef<THREE.Group>(null);
-  const [hovered, setHovered] = useState(false);
 
   useFrame((state) => {
     if (groupRef.current) {
@@ -45,19 +44,12 @@ function FoodPlate() {
 }
 
 export default function Interactive3DFood() {
-  const glbUrl = 'https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb';
-
-  const handleViewInAR = () => {
-    const sceneViewerUrl = `https://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(glbUrl)}&mode=ar_preferred`;
-    window.open(sceneViewerUrl, '_blank');
-  };
-
   return (
     <div className="w-full">
       <div className="bg-gradient-to-br from-slate-50 via-white to-slate-50 rounded-3xl p-8 border-2 border-slate-200 shadow-xl">
         <div className="text-center mb-6">
           <div className="inline-flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full mb-3">
-            <Eye className="w-4 h-4" />
+            <Sparkles className="w-4 h-4" />
             <span className="text-sm font-semibold">Interactive 3D Experience</span>
           </div>
           <h3 className="text-3xl font-bold text-slate-900 mb-2">
@@ -108,23 +100,7 @@ export default function Interactive3DFood() {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button
-            onClick={handleViewInAR}
-            className="group px-8 py-4 bg-slate-900 text-white rounded-xl font-semibold text-lg hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl flex items-center gap-3"
-          >
-            <Eye className="w-6 h-6" />
-            <span>View in AR (Google Scene Viewer)</span>
-          </button>
-
-          <div className="text-center sm:text-left">
-            <p className="text-sm text-slate-600">
-              Open on mobile to place in your space
-            </p>
-          </div>
-        </div>
-
-        <div className="mt-8 grid grid-cols-3 gap-4 text-center">
+        <div className="mt-6 grid grid-cols-3 gap-4 text-center">
           <div className="bg-white p-4 rounded-xl border border-slate-200">
             <div className="text-2xl font-bold text-slate-900 mb-1">360°</div>
             <div className="text-sm text-slate-600">Full Rotation</div>
@@ -134,8 +110,8 @@ export default function Interactive3DFood() {
             <div className="text-sm text-slate-600">Every Detail</div>
           </div>
           <div className="bg-white p-4 rounded-xl border border-slate-200">
-            <div className="text-2xl font-bold text-slate-900 mb-1">AR</div>
-            <div className="text-sm text-slate-600">Real Space</div>
+            <div className="text-2xl font-bold text-slate-900 mb-1">Interactive</div>
+            <div className="text-sm text-slate-600">Play & Explore</div>
           </div>
         </div>
       </div>
