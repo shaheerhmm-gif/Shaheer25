@@ -24,8 +24,15 @@ export default function ARMenu() {
 
   return (
     <div className="min-h-screen pt-16">
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 via-pink-50 to-white">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 relative bg-white overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1200&dpr=2"
+            alt="Delicious restaurant food presentation"
+            className="w-full h-full object-cover opacity-5"
+          />
+        </div>
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-12">
             <div className="inline-flex items-center space-x-2 bg-purple-100 px-4 py-2 rounded-full mb-6">
               <Eye className="w-5 h-5 text-purple-600" />

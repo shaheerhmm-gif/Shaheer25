@@ -49,14 +49,22 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            <div className="order-1 lg:order-2 bg-gradient-to-br from-slate-100 to-slate-50 rounded-3xl p-12 aspect-square flex items-center justify-center">
-              <ChefHat className="w-48 h-48 text-slate-300" strokeWidth={1} />
+            <div className="order-1 lg:order-2 rounded-3xl overflow-hidden aspect-square">
+              <img
+                src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&dpr=2"
+                alt="Professional chef preparing gourmet dishes in restaurant kitchen"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div className="bg-gradient-to-br from-slate-100 to-slate-50 rounded-3xl p-12 aspect-square flex items-center justify-center">
-              <Globe className="w-48 h-48 text-slate-300" strokeWidth={1} />
+            <div className="rounded-3xl overflow-hidden aspect-square">
+              <img
+                src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&dpr=2"
+                alt="Modern digital marketing workspace with social media analytics"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <div className="inline-flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full mb-6">
@@ -141,14 +149,22 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            <div className="order-1 lg:order-2 bg-gradient-to-br from-slate-100 to-slate-50 rounded-3xl p-12 aspect-square flex items-center justify-center">
-              <Eye className="w-48 h-48 text-slate-300" strokeWidth={1} />
+            <div className="order-1 lg:order-2 rounded-3xl overflow-hidden aspect-square">
+              <img
+                src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&dpr=2"
+                alt="Customer viewing restaurant menu on smartphone with AR technology"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div className="bg-gradient-to-br from-slate-900 to-slate-700 rounded-3xl p-12 aspect-square flex items-center justify-center">
-              <Users className="w-48 h-48 text-slate-400" strokeWidth={1} />
+            <div className="rounded-3xl overflow-hidden aspect-square">
+              <img
+                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1200&dpr=2"
+                alt="Food influencer creating content at restaurant with smartphone"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <div className="inline-flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full mb-6">

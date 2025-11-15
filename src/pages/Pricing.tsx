@@ -4,8 +4,17 @@ import { Check, ArrowRight } from 'lucide-react';
 export default function Pricing() {
   return (
     <div className="min-h-screen pt-20 bg-white">
-      <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="text-center mb-20">
+      <div className="relative">
+        <div className="absolute inset-0 h-96">
+          <img
+            src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=2"
+            alt="Elegant restaurant ambiance"
+            className="w-full h-full object-cover opacity-10"
+          />
+        </div>
+
+        <div className="relative max-w-6xl mx-auto px-6 py-16">
+          <div className="text-center mb-20">
           <h1 className="text-5xl sm:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
             Simple Pricing
           </h1>
@@ -227,6 +236,7 @@ export default function Pricing() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

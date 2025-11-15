@@ -58,8 +58,15 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen pt-16">
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-amber-50 to-orange-50">
-        <div className="max-w-7xl mx-auto text-center">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=2"
+            alt="Restaurant interior"
+            className="w-full h-full object-cover opacity-5"
+          />
+        </div>
+        <div className="max-w-7xl mx-auto text-center relative z-10">
           <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6">
             Let's Transform Your <span className="text-amber-600">Restaurant</span>
           </h1>

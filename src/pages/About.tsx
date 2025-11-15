@@ -35,14 +35,22 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-amber-100 to-orange-100 rounded-3xl p-12 h-96 flex items-center justify-center">
-              <Award className="w-48 h-48 text-amber-500 opacity-20" />
+            <div className="rounded-3xl overflow-hidden h-96">
+              <img
+                src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=2"
+                alt="Beautiful restaurant interior with elegant ambiance and fine dining setup"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-            <div className="bg-gradient-to-br from-blue-100 to-cyan-100 rounded-3xl p-12 h-96 flex items-center justify-center order-2 lg:order-1">
-              <Target className="w-48 h-48 text-blue-500 opacity-20" />
+            <div className="rounded-3xl overflow-hidden h-96 order-2 lg:order-1">
+              <img
+                src="https://images.pexels.com/photos/2788792/pexels-photo-2788792.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=2"
+                alt="Restaurant team working together in professional kitchen environment"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
